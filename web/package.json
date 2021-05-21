@@ -1,0 +1,53 @@
+{
+  "name": "browser",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@popperjs/core": "^2.9.0",
+    "chart.js": "^2.9.4",
+    "google-map-react": "^2.1.9",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.3",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^6.7.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-select": "^3.1.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "yarn run watch:css && react-scripts start",
+    "build": "yarn run build:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/styles/tailwind.css -o src/assets/styles/styling.css",
+    "watch:css": "postcss src/assets/styles/tailwind.css -o src/assets/styles/styling.css",
+    "lint:fix": "yarn run lint --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.8.10",
+    "typescript": "~3.7.2"
+  }
+}
